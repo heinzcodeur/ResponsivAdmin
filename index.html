@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <!--script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script-->
 </head>
 <body>
 <div class="container">
@@ -16,7 +16,7 @@
             <li>
                 <a href="">
                     <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
-                    <span class="title"><h2><img src="logo-CIIB-v9.png" alt="" width="30px" height="25px"></h2></span>
+                    <span class="title"><h2>BrandName</h2></span>
                 </a>
             </li>
 
@@ -78,5 +78,35 @@
         </ul>
     </div>
 </div>
+
+<div class="main">
+    <div class="topbar">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="search">
+            <label for="rechercher">
+                <input type="text" id="rechercher" placeholder="rechercher">
+                <i class="fa fa-search" aria-hidden="true"></i>
+
+
+            </label>
+        </div>
+            <div class="user">
+                <img src="usual.jpeg" alt="" width="120px" height="100px">
+            </div>
+        </div>
+    </div>
+
+<script>
+    function toggleMenu() {
+        //let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+       //toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      main.classList.toggle('active2');
+    }
+
+</script>
+
 </body>
 </html>
