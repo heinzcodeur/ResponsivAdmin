@@ -188,7 +188,7 @@ body{
     width: 100%;
     padding:20px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     background: aliceblue;
 }
@@ -223,11 +223,13 @@ body{
     padding: 20px;
     padding-top: 0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+    grid-template-columns: 60% auto;
     }
 
 
 .details .recentsorders{
+    border-radius: 9px;
     position: relative;
     display: grid;
     min-height: 530px;
@@ -332,6 +334,8 @@ text-align: right;
     min-height: 530px;
     background: #fff;
     padding: 20px;
+    border-radius: 9px;
+
 }
 
 .details .recentCustomers .imgBx{
@@ -354,6 +358,10 @@ text-align: right;
 .details .recentCustomers table tr td h4 span{
     font-size: 14px;
     color: #999;
+}
+
+.details .recentCustomers table tr{
+    text-align: center;
 }
 
 .details .recentCustomers table tr:hover,
